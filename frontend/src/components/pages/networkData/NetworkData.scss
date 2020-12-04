@@ -1,0 +1,129 @@
+.strippedLine {
+  background-color: #fbfbfb;
+}
+
+.defaultPanel{
+  .p-panel-header{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px;
+    color: #fff0f5;
+  }
+  .p-panel-content{
+    height: 281px;
+    padding: 0px;
+  }
+  .p-panel-title{
+    width: 100%;
+  }
+  .p-grid{
+    margin:0px;
+  }
+  .p-col{
+    align-self: center;
+    height: 40px;
+  }
+}
+
+.successPanel {
+  .p-panel-header{
+    background-color: green;
+    border-color: green;
+  }
+  .p-panel-content{
+    border-color: green;
+  }
+}
+
+.errorPanel {
+  .p-panel-header{
+    background-color : #ce3131;
+    border-color: #ce3131;
+  }
+  .p-panel-content{
+    border-color: #ce3131;
+  }
+}
+
+.clickable-div:hover {
+  cursor: pointer;
+}
+
+.quotaAccordion-notExceed {
+	.p-accordion-header-link {
+		background-color: green !important;
+		color: white !important;
+	}
+}
+
+.quotaAccordion-exceed {
+	.p-accordion-header-link {
+		background-color:  #ce3131 !important;
+		color: white !important;
+	}
+}
+.taskAccordion {
+	.p-accordion-header-link {
+		background-color: #77736e !important;
+		color: white !important;
+	}
+}
+
+.taskFieldSet{
+	.p-fieldset-legend {
+		color: white !important;
+	    background: #77736e !important;
+	}
+	.p-fieldset-legend-text {
+		color:white !important;
+	}
+	.p-fieldset-toggler {
+		color:white !important;
+	}
+}
+
+.quotaFieldSet-error {
+	border : 2px solid;
+	border-color: red !important;
+	.p-fieldset .p-fieldset-legend {
+	   	background: red !important;
+		color: white !important;
+	}
+	.p-fieldset-legend {
+		color: white !important;
+	    background: red !important;
+	}
+	.p-fieldset-legend-text {
+		color:white !important;
+	}
+	.p-fieldset-toggler {
+		color:white !important;
+	}
+	.p-fieldset-toggler {
+		color:white !important;
+		background-image: pi-chevron-down;
+	}
+}
+
+.quotaFieldSet-success {
+	border : 2px solid;
+	border-color: green !important;
+	.p-fieldset .p-fieldset-legend {
+	    color: white !important;
+	    background: green !important;
+	}
+	.p-fieldset-legend {
+		color: white !important;
+	    background: green !important;
+	}
+	.p-fieldset-legend-text {
+		color:white !important;
+	}
+	.p-fieldset-toggler {
+		color:white !important;
+	}	
+	.p-fieldset-toggler {
+		color:white !important;
+		background-image: pi-chevron-down;
+	}	
+}

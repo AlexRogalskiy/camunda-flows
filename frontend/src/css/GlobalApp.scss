@@ -1,0 +1,73 @@
+.p-card-title {
+    color: #253342;
+    font-size: 17px !important;
+    text-align: center;
+}
+
+.p-card {
+    background-color: rgba(222, 227, 237, 0.1);
+}
+
+.headerdiv {
+    width: 200px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background-color: #fafbfb;
+}
+
+.p-message .p-message-wrapper {
+    padding: 3px;
+}
+
+.p-message {
+    margin: 2px;
+}
+
+.p-message .p-message-icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.p-message.p-message-success {
+    background: #e5ffec;
+    border: solid #14a71a;
+    border-width: 0 0 0 6px;
+    color: #1c271c;
+}
+
+.p-field {
+    margin-bottom: 0.8rem;
+    height: 35px;
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
+    background: #104e8c;
+}
+/*
+.p-button {
+    background: #6c757d;
+    border-color: #6c757d;
+}
+
+.p-button:enabled:hover {
+    background: #2b4358;
+    border-color: #2b4358;
+}
+*/
+li:hover, li:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+a:hover, a:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+button:hover, button:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+.p-treenode-content:hover, .p-treenode-content:focus {
+    outline: none;
+    box-shadow: none!important;
+}
