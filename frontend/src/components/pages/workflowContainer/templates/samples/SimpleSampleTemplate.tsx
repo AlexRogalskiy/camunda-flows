@@ -12,7 +12,7 @@ const SimpleSampleTemplate: React.FC<UITemplateProps> = (props) => {
     return (
         <UITemplate stepForward={props.stepForward}>
             <div>
-                <p>I am a simple sample template.</p>
+                <p>This is a basic page loaded dynamically via BPMN Forms Key.</p>
             </div>
         </UITemplate>
     );

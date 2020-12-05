@@ -14,14 +14,14 @@ const ConfirmationDialog: React.FC<ComponentProps> = (props) => {
 
     const dialogFooter =
         <div className="ui-dialog-buttonpane p-clearfix">
-            <Button label="Evet" icon="pi pi-check p-button-sm" className="contentsMarginRight"
+            <Button label="Yes" icon="pi pi-check p-button-sm" className="contentsMarginRight"
                     onClick={props.yesHandler} />
-            <Button label="Hayır" icon="pi pi-times p-button-sm" className="contentsMarginRight"
+            <Button label="No" icon="pi pi-times p-button-sm" className="contentsMarginRight"
                     onClick={props.noHandler} />
         </div>;
 
     return (
-        <Dialog visible={props.isVisible} header="Onay" modal={true}
+        <Dialog visible={props.isVisible} header="Approve" modal={true}
                 footer={dialogFooter} onHide={props.noHandler}>
             <p>{props.message}</p>
         </Dialog>

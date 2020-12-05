@@ -18,8 +18,8 @@ const AdvancedSampleTemplate: React.FC<UITemplateProps> = (props) => {
     return (
         <UITemplate stepForward={stepForward}>
             <div>
-                <p>I am an advanced sample template.</p>
-                <p>You can submit below parameter to flow variable.</p>
+                <p>This is an advanced template which has its own step forward handler.</p>
+                <p>You can submit below parameter to camunda flow as a task variable.</p>
                 <InputText id="pingUrlAddress" value={pingUrlAddress} style={{width:'150px'}}
                     onChange={(e:FormEvent<HTMLInputElement>) => {setPingUrlAddress(e.currentTarget.value)}}  />
             </div>

@@ -8,7 +8,7 @@ interface ComponentProps {
 }
 
 const defaultValues:ComponentProps ={
-    message:"İşleminiz yapılıyor lütfen bekleyin.",
+    message:"In progress, please wait.",
     width: "700px"
 }
 const LoadingComponent: React.FC<ComponentProps> = (props) => {

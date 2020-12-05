@@ -55,7 +55,7 @@ const Workflows: React.FC = () => {
         }
     }
 
-    const confirmationDialogMessage = "Yeni bir akış başlatmak için, " + get(selectedFlow) + " akışı iptal edilecektir, onaylıyor musunuz ?"
+    const confirmationDialogMessage =+ get(selectedFlow) + " process will terminate to start a new process, do you approve ?"
 
     const cancelCurrentFlowAndStartNew = () => {
         if(processInstanceId !== null){
