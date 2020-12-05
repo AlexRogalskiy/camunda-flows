@@ -27,7 +27,7 @@ const LayoutTop: React.FC = () => {
 
     const userInfo = useSelector( (state: RootState) =>  state.session.userInfo);
     const userName:any = userInfo ? userInfo.preferred_username : "";
-    console.log("LayoutTop is rendered.", userInfo);
+    console.log("LayoutTop is rendered.");
 
     const { keycloak } = useKeycloak();
 

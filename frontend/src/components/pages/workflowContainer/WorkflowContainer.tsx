@@ -108,7 +108,7 @@ const WorkflowContainer: React.FC<WorkflowProps> = ({processDefinitionKey}) => {
                     {
                         processInstanceId === null &&
                         <div style={{display:"inline-flex", alignItems: "center"}}>
-                            <span>Bu ekrandan <b>{get(processDefinitionKey)}</b> akışı başlatılabilir.</span>
+                            <span>You can start process "<b>{get(processDefinitionKey)}</b>"</span>
                             <Button label={get("signals.startFlow")} icon="pi pi-play" className="p-button-link p-button-sm" onClick={startFlowInstance}/>
                         </div>
                     }

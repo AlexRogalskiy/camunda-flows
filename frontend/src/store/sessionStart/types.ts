@@ -10,8 +10,6 @@ export interface SessionStart {
 	modemInfo: ModemInfo | null;
 	switchInfo: SwitchInfo | null;
 	bngInfo: BngInfo | null;
-	openTaskList: FoxTask[];
-	quotaInfo : QuotaInfo | null;
 }
 
 export interface OperationResponse {
@@ -34,26 +32,6 @@ export interface ModemInfo {
 	serialNumber: string;
 	vendor: string;
 	lastConnectionDate: string;
-}
-
-export interface FoxTask {
-	taskId: string;
-	taskStatus: string;
-	taskStatusCode: string;
-	serviceId: string;
-	taskTarihi: string;
-	taskIdCode: string;
-	taskBildirenAdi: string;
-	taskBildirenGrubu: string;
-
-	emptorRequestId: string;
-	emptorSubRequestId: string;
-	descriptionDetail: string;
-	baglantiProblemiDetay: string;
-	nfInfrastructure: string;
-
-	isInvalid: boolean;
-	isRunning: boolean;
 }
 
 export interface SwitchInfo {
@@ -79,30 +57,12 @@ export interface NpmInfo {
 	switchInfo:SwitchInfo | null;
 }
 
-export interface QuotaInfo {
-	quotaExceed: boolean;
-	jokerKotaExist: boolean;
-	quatoUsageList: QuotaUsageInfo[];
-}
-
-export interface QuotaUsageInfo {
-	serviceId: string;
-	serviceDefinition: string;
-	quotaExceed: boolean;
-	download: string;
-	upload: string;
-	total: string;
-	extraDescription : string;
-}
-
 export enum SessionStartActionTypes {
 	TAB_CHANGE = "@@sessionStart/TAB_CHANGE",
 	INIT_COMPLETED = "@@sessionStart/INIT_COMPLETED",
 	SET_USER_INFO = "@@sessionStart/SET_USER_INFO",
 	SET_SUBSCRIBER_ID = "@@sessionStart/SET_SUBSCRIBER_ID",
 	SET_MODEM_INFO = "@@sessionStart/SET_MODEM_INFO",
-	SET_OPEN_TASK_DETAILS = "@@sessionStart/SET_OPEN_TASK_DETAILS",
 	SET_NPM_INFO = "@@sessionStart/SET_NPM_INFO",
-	SET_QUOTA_INFO = "@@sessionStart/SET_QUOTA_INFO",
 	SET_NW_INITIATED = "@@sessionStart/SET_NW_INITIATED"
 }

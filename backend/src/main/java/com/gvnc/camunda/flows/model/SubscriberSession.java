@@ -21,4 +21,13 @@ public class SubscriberSession extends BaseModel{
 
     @Getter @Setter
     private String agentUser;
+
+    @Getter @Setter
+    private Modem modem;
+
+    @Getter @Setter
+    private SwitchInfo switchInfo;
+
+    @Getter @Setter
+    private BngInfo bng;
 }

@@ -12,8 +12,6 @@ export const initialState: SessionStart = {
 	modemInfo: null,
 	switchInfo: null,
 	bngInfo: null,
-	openTaskList: [],
-	quotaInfo: null
 };
 
 const reducer: Reducer<SessionStart> = (state = initialState, action) => {
@@ -50,21 +48,11 @@ const reducer: Reducer<SessionStart> = (state = initialState, action) => {
 				...state,
 				modemInfo: action.modemInfo
 			};
-		case SessionStartActionTypes.SET_OPEN_TASK_DETAILS:
-			return {
-				...state,
-				openTaskList: action.openTaskList
-			};
 		case SessionStartActionTypes.SET_NPM_INFO:
 			return {
 				...state,
 				switchInfo: action.switchInfo,
 				bngInfo: action.bngInfo
-			};
-		case SessionStartActionTypes.SET_QUOTA_INFO:
-			return {
-				...state,
-				quotaInfo: action.quotaInfo
 			};
 		default:
 			return state;

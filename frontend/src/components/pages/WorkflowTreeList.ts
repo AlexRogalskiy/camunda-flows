@@ -2,74 +2,50 @@ import TreeNode from "primereact/components/treenode/TreeNode";
 
 export const workflowTreeList:TreeNode [] = [
     {
-        key: "baglantiProblemleri",
-        label: "Bağlantı Problemleri",
+        key: "internetIssues",
+        label: "Internet Issues",
         data: "category",
         children: [
             {
-                key: "interneteGiremiyorum",
-                label: "İnternete Giremiyorum",
+                key: "noInternet",
+                label: "No Internet",
                 data: "subcategory",
                 children:[]
             },
             {
-                key: "sayfaAcamiyorum",
-                label: "Sayfa Açamıyorum",
+                key: "slowSpeedIssue",
+                label: "Slow Speed",
                 data: "subcategory",
                 children:[]
             },
             {
-                key: "baglantimKopuyor",
-                label: "Bağlantım Kopuyor",
-                data: "subcategory",
-                children:[]
-            },
-            {
-                key: "hizimYavas",
-                label: "Hızım Yavaş",
-                data: "subcategory",
-                children:[]
-            },
-            {
-                key: "kablosuzAgAyarlari",
-                label: "Kablosuz Ağ Ayarları",
-                data: "subcategory",
-                children:[]
-            },
-            {
-                key: "portYonlendirme",
-                label: "Port Yönlendirme",
+                key: "wifiSettings",
+                label: "Wifi Settings",
                 data: "subcategory",
                 children:[]
             }
         ]
     },
     {
-        key: "tvProblemleri",
-        label: "TV Problemleri",
+        key: "tvIssues",
+        label: "TV Issues",
         data: "category",
         children: [
             {
-                key: "siyahEkran",
-                label: "Siyah Ekran",
+                key: "broadcastIssue",
+                label: "Broadcast Issue",
                 data: "subcategory",
                 children:[]
             },
             {
-                key: "yayinProblemi",
-                label: "Yayın Problemi",
+                key: "loginIssue",
+                label: "Login Issue",
                 data: "subcategory",
                 children:[]
             },
             {
-                key: "loginOlamiyorum",
-                label: "Login Olamıyorum",
-                data: "subcategory",
-                children:[]
-            },
-            {
-                key: "geriSarmaCalismiyor",
-                label: "Geri Sarma Çalışmıyor",
+                key: "remoteControllerIssue",
+                label: "Remote Controller Issue",
                 data: "subcategory",
                 children:[]
             }
@@ -77,19 +53,7 @@ export const workflowTreeList:TreeNode [] = [
     },
     {
         key: "diagram1",
-        label: "Arama Problemleri",
-        data: "category",
-        children:[]
-    },
-    {
-        key: "churnTalebi",
-        label: "Churn Talepleri",
-        data: "category",
-        children:[]
-    },
-    {
-        key: "tvL1Kontrolleri",
-        label: "TV L1 Kontrolleri",
+        label: "Sample Flow",
         data: "category",
         children:[]
     }
