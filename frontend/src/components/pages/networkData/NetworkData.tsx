@@ -89,6 +89,7 @@ const NetworkData: React.FC = () => {
 	}
 
 	return (
+
 		<ScrollPanel style={{ width: '1200px', marginTop: '20px', height: '600px' }}>
 			<div className="p-grid">
 				<div className="p-col-4">
