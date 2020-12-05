@@ -5,7 +5,7 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("solid.SubscriberSession")
+@RedisHash("camundaFlows.SubscriberSession")
 public class SubscriberSession extends BaseModel{
 
   	private static final long serialVersionUID = 1L;

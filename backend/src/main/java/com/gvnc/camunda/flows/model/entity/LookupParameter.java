@@ -1,4 +1,4 @@
-package com.gvnc.camunda.flows.model.entity.solid;
+package com.gvnc.camunda.flows.model.entity;
 
 import com.gvnc.camunda.flows.model.entity.BaseEntity;
 import lombok.Getter;

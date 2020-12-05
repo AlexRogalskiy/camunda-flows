@@ -1,6 +1,6 @@
-package com.gvnc.camunda.flows.repository.solid;
+package com.gvnc.camunda.flows.repository;
 
-import com.gvnc.camunda.flows.model.entity.solid.LookupParameter;
+import com.gvnc.camunda.flows.model.entity.LookupParameter;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

@@ -34,7 +34,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public final class CommonUtils {
 
-	private static final String LOG4J_TRANSACTION_KEY = "Solid";
+	private static final String LOG4J_TRANSACTION_KEY = "CFApp";
 	private static final Gson GSON = new Gson();
 
 	private static final String[] IP_HEADER_CANDIDATES = { "X-Forwarded-For", "Proxy-Client-IP", "WL-Proxy-Client-IP",

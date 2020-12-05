@@ -1,6 +1,6 @@
-package com.gvnc.camunda.flows.repository.solid;
+package com.gvnc.camunda.flows.repository;
 
-import com.gvnc.camunda.flows.model.entity.solid.WsParameter;
+import com.gvnc.camunda.flows.model.entity.WsParameter;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.repository.CrudRepository;
 
