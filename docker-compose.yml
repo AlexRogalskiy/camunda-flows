@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+   db:
+     image: postgres:latest
+     restart: always
+     network_mode: host
+     environment:
+       POSTGRES_PASSWORD: password123
+       POSTGRES_USER: appDbUser
+       POSTGRES_DB: appDb 
+
+   redis:
+     image: redis:latest
+     restart: always
+     network_mode: host
+
+   appbackend:
+     depends_on:
+       - db
+       - redis
+     image: camunda-flows-backend:0.0.1
+     ports:
+       - "8080:8080"
+     restart: "no"
+     network_mode: host
+
